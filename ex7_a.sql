@@ -85,6 +85,6 @@ DELETE from pet WHERE dead = 1;
 
 SELECT * FROM pet;
 
-INSERT INTO pet VALUES (0, 'Maddie', 'dog', 1, 0);
+INSERT INTO pet VALUES (0, 'Maddie', 'dog', 1, 1);
 
 SELECT * FROM pet;
