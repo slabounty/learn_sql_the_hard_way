@@ -1,6 +1,6 @@
-DROP TABLE person_pet;
-DROP TABLE pet;
-DROP TABLE person;
+DROP TABLE IF EXISTS person_pet;
+DROP TABLE IF EXISTS pet;
+DROP TABLE IF EXISTS person;
 
 /* ex2.sql */
 CREATE TABLE person (
