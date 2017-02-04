@@ -10,6 +10,9 @@ CREATE TABLE person (
   age INTEGER
 );
 
+ALTER TABLE person ADD COLUMN height INTEGER;
+ALTER TABLE person ADD COLUMN weight INTEGER;
+
 CREATE TABLE pet (
   id INTEGER PRIMARY KEY,
   name TEXT,
@@ -24,8 +27,8 @@ CREATE TABLE person_pet (
 );
 
 /* ex3.sql */
-INSERT INTO person (id, first_name, last_name, age)
-  VALUES (0, 'Scott', 'LaBounty', 59);
+INSERT INTO person (id, first_name, last_name, age, height, weight)
+  VALUES (0, 'Scott', 'LaBounty', 59, 66, 135);
 
 INSERT INTO pet (id, name, breed, age, dead)
   VALUES (0, 'Maddie', 'dog', 5, 1);
