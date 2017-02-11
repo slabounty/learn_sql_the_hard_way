@@ -42,7 +42,7 @@ UPDATE person_pet SET purchased_on = '2000-03-04'  WHERE pet_id IN (
 
 UPDATE person_pet SET purchased_on = '2010-04-05'  WHERE pet_id IN (
   SELECT pet.id
-  FROM pet
+  FROM pet, person
   WHERE
     person.first_name = 'Scott' AND
     person.last_name = 'LaBounty' AND
