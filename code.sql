@@ -7,11 +7,12 @@ CREATE TABLE person (
   id INTEGER PRIMARY KEY,
   first_name TEXT,
   last_name TEXT,
-  age INTEGER
+  age INTEGER,
+  dob DATETIME
 );
 
-ALTER TABLE person ADD COLUMN height INTEGER;
-ALTER TABLE person ADD COLUMN weight INTEGER;
+-- ALTER TABLE person ADD COLUMN height INTEGER;
+-- ALTER TABLE person ADD COLUMN weight INTEGER;
 
 CREATE TABLE pet (
   id INTEGER PRIMARY KEY,
@@ -23,7 +24,8 @@ CREATE TABLE pet (
 
 CREATE TABLE person_pet (
   person_id INTEGER,
-  pet_id INTEGER
+  pet_id INTEGER,
+  purchased_on DATETIME
 );
 
 /* ex3.sql */
